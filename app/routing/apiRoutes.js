@@ -10,7 +10,7 @@ module.exports = function (app) {
   app.post('/api/friends', (request, response) => {
     const user = request.body;
     try {
-      const userObj = new Friend(user.name, user.photoURL, user.scores.map(e => parseInt(e)));
+      const userObj = new Friend(user.name, encodeURI(user.photoURL), user.scores.map(e => parseInt(e, 10)));
       // eslint-disable-next-line arrow-body-style
       const bestMatch = friends.reduce((curr, prev) => {
         return curr.compScore(userObj.scores) < prev.compScore(userObj.scores) ? curr : prev;

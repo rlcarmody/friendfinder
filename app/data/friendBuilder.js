@@ -1,6 +1,6 @@
 class Friend {
   constructor(name, photoURL, scores) {
-    if (typeof name === 'string') {
+    if (typeof name === 'string' && name) {
       this.name = name;
     } else throw new Error('Invalid Name');
     if (typeof photoURL === 'string' && photoURL.substr(0, 4) === 'http') {
