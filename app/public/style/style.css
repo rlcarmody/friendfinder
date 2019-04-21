@@ -2,6 +2,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: #ddd;
 }
 
 #index-banner {
@@ -16,21 +17,21 @@ input[type=range] {
   width: 100%;
 }
 input[type=range]::-webkit-slider-thumb {
-  background-color: #ff80ab;
+  background-color: inherit;
 }
 input[type=range]::-moz-range-thumb {
-  background-color: #ff80ab;
+  background-color: inherit;
 }
 input[type=range]::-ms-thumb {
-  background-color: #ff80ab;
+  background-color: inherit;
 }
 input[type=range] + .thumb {
-  background-color: #ff80ab;
-  display: none;
+  background-color: hsl(188, 100%,50%);
 }
 nav {
   padding: 0;
   height: 75px;
+  background-color: hsl(188, 100%,50%);
 }
 .nav-wrapper.container {
   display: flex;
@@ -53,9 +54,9 @@ label {
   display: block;
 }
 
-span.col  {
+/* span.col  {
   text-align: center;
-}
+} */
 #colorblock {
   height: 4em;
   background-color: hsl(188,100%,50%)

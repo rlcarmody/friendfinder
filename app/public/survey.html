@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="pink darken-2 lighten-1" role="navigation">
+    <nav role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><img
                     src="./images/icon.png" alt="Friend Finder Logo" id="logo" />FriendFinder</a>
         </div>
@@ -20,93 +20,132 @@
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
             <form id="friendForm">
-                <label for="name">Name<input type="text" name="name" id="name"></label>
-                <label for="photoURL">Photo URL<input type="text" name="photoURL" id="photoURL"></label>
+                <div class="card-panel hoverable">
+                    <label for="name">Name<input type="text" name="name" id="name"></label>
+                    <label for="photoURL">Photo URL<input type="text" name="photoURL" id="photoURL"></label>
+                </div>
                 <div class="range-field">
-                    <div class="range-field">
+                    <div class="card-panel hoverable">
                         <label>What is your favorite color?</label>
                         <div class="row">
-                            <div id="colorblock" class=" col s2 offset-s5 z-depth-3"></div>
+                            <span class="col s1 orange-text left-align">Orange</span>
+                            <span class="col s4 green-text center-align">Green</span>
+                            <span class="col s2 blue-text center-align">Blue</span>
+                            <span class="col s4 purple-text center-align">Purple</span>
+                            <span class="col s1 red-text right-align">Red</span>
                         </div>
-                        <div class="row">
-                            <span class="col s2 red-text">Orange</span>
+                        <div class="range-field">
                             <input type="range" min="15" max="360" name="scores" class="col s8" id="favoritecolor">
-                            <span class="col s2 red-text">Red</span>
                         </div>
                     </div>
-                    <div class="range-field">
-                        <label>Question 2</label>
+                    <div class="card-panel hoverable">
+                        <label>Rate your passion for outdoor activities</label>
+                        <div class="row">
+                            <span class="col s6 left-align">I <em>hate</em> nature!</span>
+                            <span class="col s6 right-align">My dream house is a tent</span>
+                        </div>
+                        <div class="range-field">
+                            <input type="range" min="1" max="100" name="scores" class="col s8">
+                        </div>
+                    </div>
+                    <div class="card-panel hoverable">
+                        <label>Do you hear yanny or Laurel?</label>
+                        <div class="row">
+                            <audio class="col s12" src="./audio/yanny-laurel.wav" controls></audio>
+                        </div>
+                        <div class="row">
+                            <span class="col s4 left-align">Yanny</span>
+                            <span class="col s4 center-align">Both!</span>
+                            <span class="col s4 right-align">Laurel</span>
+                        </div>
+                        <div class="range-field">
+                            <input type="range" min="1" max="3" name="scores" class="col s8">
+                        </div>
+                    </div>
+                    <div class="card-panel hoverable">
+                        <label>Favorite Pets</label>
+                        <div class="row">
+                            <span class="col s2 left-align">Goldfish</span>
+                            <span class="col s4 center-align">Cat</span>
+                            <span class="col s4 center-align">Dog</span>
+                            <span class="col s2 right-align">All the pets!</span>
+                        </div>
+                        <div class="range-field">
+                            <input type="range" min="1" max="50" name="scores" class="col s8">
+                        </div>
+                    </div>
+                    <div class="card-panel hoverable">
+                        <label>I would uproot my life to be with my true love</label>
+                        <div class="row">
+                            <span class="col s2">No way!</span>
+                            <span class="col s3 center-align">Not likely</span>
+                            <span class="col s2 center-align">Convince me</span>
+                            <span class="col s2 right-align">Probably</span>
+                            <span class="col s3 right-align">In a heartbeat</span>
+                        </div>
+                        <div class="range-field">
+                            <input type="range" min="1" max="100" name="scores" class="col s8">
+                        </div>
+                    </div>
+                    <div class="card-panel hoverable">
+                        <label>Do you like scary movies?</label>
+                        <div class="row">
+                            <span class="col s2">Nope, nope, nope!</span>
+                            <span class="col s3 center-align">Nope</span>
+                            <span class="col s2 center-align">Sometimes</span>
+                            <span class="col s3 center-align">Hell, yeah</span>
+                            <span class="col s2 right-align">I have a George Romero tattoo</span>
+                        </div>
+                        <div class="range-field">
+                            <input type="range" min="1" max="100" name="scores" class="col s8">
+                        </div>
+                    </div>
+                    <div class="card-panel hoverable">
+                        <label>Are you a morning person?</label>
+                        <div class="row">
+                            <span class="col s4">Mornings are the best!</span>
+                            <span class="col s4 center-align">Just get me coffee first</span>
+                            <span class="col s4 right-align">Talk to me before 10am at your own risk</span>
+                        </div>
+                        <div class="range-field">
+                            <input type="range" min="1" max="100" name="scores" class="col s8">
+                        </div>
+                    </div>
+                    <div class="card-panel hoverable">
+                        <label>How important is religion?</label>
+                        <div class="row">
+                            <span class="col s6">Not at all important</span>
+                            <span class="col s6 right-align">Very Important</span>
+                        </div>
+                        <div class="range-field">
+                            <input type="range" min="1" max="100" name="scores" class="col s8">
+                        </div>
+                    </div>
+                    <div class="card-panel hoverable">
+                        <label>Do you want the people in your life to be simple or complex?</label>
+                        <div class="row">
+                            <span class="col s6">Complex</span>
+                            <span class="col s6 right-align">Simple</span>
+                        </div>
+                        <div class="range-field">
+                            <input type="range" min="1" max="100" name="scores" class="col s8">
+                        </div>
+                    </div>
+                    <div class="card-panel hoverable">
+                        <label>10 questions is too few to determine compatibility</label>
                         <div class="row">
                             <span class="col s2">Strongly Disagree</span>
+                            <span class="col s3 center-align">Disagree</span>
+                            <span class="col s2 center-align">Meh</span>
+                            <span class="col s3 center-align">Agree</span>
+                            <span class="col s2 right-align">Strongly Agree</span>
+                        </div>
+                        <div class="range-field">
                             <input type="range" min="1" max="100" name="scores" class="col s8">
-                            <span class="col s2">Strongly Agree</span>
                         </div>
                     </div>
-                    <div class="range-field">
-                        <label>Question 3</label>
-                        <div class="row">
-                            <span class="col s2">Strongly Disagree</span>
-                            <input type="range" min="1" max="100" name="scores" class="col s8">
-                            <span class="col s2">Strongly Agree</span>
-                        </div>
-                    </div>
-                    <div class="range-field">
-                        <label>Question 4</label>
-                        <div class="row">
-                            <span class="col s2">Strongly Disagree</span>
-                            <input type="range" min="1" max="100" name="scores" class="col s8">
-                            <span class="col s2">Strongly Agree</span>
-                        </div>
-                    </div>
-                    <div class="range-field">
-                        <label>Question 5</label>
-                        <div class="row">
-                            <span class="col s2">Strongly Disagree</span>
-                            <input type="range" min="1" max="100" name="scores" class="col s8">
-                            <span class="col s2">Strongly Agree</span>
-                        </div>
-                    </div>
-                    <div class="range-field">
-                        <label>Question 6</label>
-                        <div class="row">
-                            <span class="col s2">Strongly Disagree</span>
-                            <input type="range" min="1" max="100" name="scores" class="col s8">
-                            <span class="col s2">Strongly Agree</span>
-                        </div>
-                    </div>
-                    <div class="range-field">
-                        <label>Question 7</label>
-                        <div class="row">
-                            <span class="col s2">Strongly Disagree</span>
-                            <input type="range" min="1" max="100" name="scores" class="col s8">
-                            <span class="col s2">Strongly Agree</span>
-                        </div>
-                    </div>
-                    <div class="range-field">
-                        <label>Question 8</label>
-                        <div class="row">
-                            <span class="col s2">Strongly Disagree</span>
-                            <input type="range" min="1" max="100" name="scores" class="col s8">
-                            <span class="col s2">Strongly Agree</span>
-                        </div>
-                    </div>
-                    <div class="range-field">
-                        <label>Question 9</label>
-                        <div class="row">
-                            <span class="col s2">Strongly Disagree</span>
-                            <input type="range" min="1" max="100" name="scores" class="col s8">
-                            <span class="col s2">Strongly Agree</span>
-                        </div>
-                    </div>
-                    <div class="range-field">
-                        <label>Question 10</label>
-                        <div class="row">
-                            <span class="col s2">Strongly Disagree</span>
-                            <input type="range" min="1" max="100" name="scores" class="col s8">
-                            <span class="col s2">Strongly Agree</span>
-                        </div>
-                    </div>
-                    <button class="btn-large pink accent-1" id="submitForm">Submit</button>
+                </div>
+                <button class="btn-large pink accent-1" id="submitForm">Submit</button>
             </form>
         </div>
         <div id="yourNewFriend" class="modal">
@@ -120,8 +159,7 @@
             </div>
         </div>
     </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="./scripts/client.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./scripts/client.js"></script>
 </body>
-
 </html>

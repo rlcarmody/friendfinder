@@ -31,4 +31,6 @@ $('#submitForm').on('click', function (e) {
 
 $('#favoritecolor').on('mousemove', function() {
   $('#colorblock').css('background-color',`hsl(${$('#favoritecolor').val()},100%,50%)`)
+  $('input[type=range] + .thumb').css('background-color',`hsl(${$('#favoritecolor').val()},100%,50%)`)
+  $('nav[role=navigation]').attr('style',`background-color:hsl(${$('#favoritecolor').val()},100%,50%) !important;`)
 })
